@@ -18,11 +18,11 @@ class ofApp : public ofBaseApp{
         int speed;
         int height;
 
-        int maxSpeed = 16;
-        int maxHeight = 48;
+        int maxSpeed = 2;
+        int maxHeight = 24;
 
-        int cameraWidth = 640;
-        int cameraHeight = 480;
+        int cameraWidth = 1280;
+        int cameraHeight = 720;
 
         float lastTimeImageWasSaved = 0;
         int intervalToSaveImage = 15;
