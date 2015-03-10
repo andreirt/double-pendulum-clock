@@ -22,7 +22,7 @@
 		<key>004FCDFA239B4F8C8AB8FDEFFA7ADF045D0C5FAE</key>
 		<string>../..</string>
 		<key>7E804D925461714118DB355C65BC964B41D94376</key>
-		<string>../../../../../addons/ofxUI</string>
+		<string>../../../addons/ofxUI</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>codebasehq.com:mandelbrot/maquinas-do-tempo/double-pendulum-clock-of.git</string>
