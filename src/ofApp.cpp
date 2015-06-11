@@ -1,4 +1,4 @@
-﻿#include "ofApp.h"
+#include "ofApp.h"
 
 const string ofApp::CAMERA_WIDTH_LABEL = "Largura da câmera";
 const string ofApp::CAMERA_HEIGHT_LABEL = "Altura da câmera";
@@ -23,7 +23,7 @@ void ofApp::setup(){
     gui->setFontSize(OFX_UI_FONT_SMALL, 8);
     gui->setFontSize(OFX_UI_FONT_LARGE, 18);
 
-    ofxUIColor backgroundColor = ofxUIColor::lightCoral;
+    ofxUIColor backgroundColor = ofxUIColor::white;
     ofxUIColor fillColor = ofxUIColor::black;
     ofxUIColor fillHightlightColor = ofxUIColor::black;
     ofxUIColor outline = ofxUIColor::black;
@@ -77,7 +77,7 @@ void ofApp::setup(){
 
     this->rotations = 0;
 
-    this->cameraPanel->addLabel("Rota��o da imagem", OFX_UI_FONT_SMALL);
+    this->cameraPanel->addLabel("Rotação da imagem", OFX_UI_FONT_SMALL);
 
     this->zeroRotationToggle = new ofxUIToggle(ofApp::ZERO_DEGREES_LABEL, true, 16, 16);
     this->zeroRotationToggle->setDrawOutline(true);
