@@ -69,7 +69,7 @@ void ofApp::setup(){
         labelToggle->setColorBack(ofxUIColor::white);
     }
 
-    this->cameraPanel->addWidgetDown( new ofxUILabel(170, ofApp::CAMERA_WIDTH_LABEL, OFX_UI_FONT_SMALL) );
+    this->cameraPanel->addWidgetDown( new ofxUILabel(180, ofApp::CAMERA_WIDTH_LABEL, OFX_UI_FONT_SMALL) );
     this->cameraWidthTextInput = new ofxUITextInput("CameraWidth", "1920", 80, 18) ;
     this->cameraWidthTextInput->setOnlyNumericInput(true);
     this->cameraWidthTextInput->setDrawOutline(true);
@@ -77,7 +77,7 @@ void ofApp::setup(){
     this->cameraPanel->addWidgetRight( cameraWidthTextInput );
     this->textInputs.push_back(this->cameraWidthTextInput);
 
-    ofxUILabel* cameraHeightLabel = new ofxUILabel(170, ofApp::CAMERA_HEIGHT_LABEL, OFX_UI_FONT_SMALL);
+    ofxUILabel* cameraHeightLabel = new ofxUILabel(180, ofApp::CAMERA_HEIGHT_LABEL, OFX_UI_FONT_SMALL);
     this->cameraPanel->addWidgetDown( cameraHeightLabel );
     this->cameraHeightTextInput = new ofxUITextInput("CameraHeight", "1080", 80, 18);
     this->cameraHeightTextInput->setOnlyNumericInput(true);
