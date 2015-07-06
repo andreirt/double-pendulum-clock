@@ -17,6 +17,14 @@ const string ofApp::TWO_HUNDRED_SEVENTY_DEGREES_LABEL = "270 graus";
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    this->selectedCameraIndex = 0;
+    this->step = 0;
+    this->maxSpeed = 2;
+    this->maxHeight = 24;
+    this->cameraWidth = 1280;
+    this->cameraHeight = 720;
+    this->lastTimeImageWasSaved = 0;
+    this->intervalToSaveImage = 15;
 
     this->gui = new ofxUICanvas(0, 0, ofGetWidth(), ofGetHeight());
     this->gui->setWidgetSpacing(10);
@@ -69,7 +77,7 @@ void ofApp::setup(){
         labelToggle->setColorBack(ofxUIColor::white);
     }
 
-    this->cameraPanel->addWidgetDown( new ofxUILabel(170, ofApp::CAMERA_WIDTH_LABEL, OFX_UI_FONT_SMALL) );
+    this->cameraPanel->addWidgetDown( new ofxUILabel(180, ofApp::CAMERA_WIDTH_LABEL, OFX_UI_FONT_SMALL) );
     this->cameraWidthTextInput = new ofxUITextInput("CameraWidth", "1920", 80, 18) ;
     this->cameraWidthTextInput->setOnlyNumericInput(true);
     this->cameraWidthTextInput->setDrawOutline(true);
@@ -77,7 +85,7 @@ void ofApp::setup(){
     this->cameraPanel->addWidgetRight( cameraWidthTextInput );
     this->textInputs.push_back(this->cameraWidthTextInput);
 
-    ofxUILabel* cameraHeightLabel = new ofxUILabel(170, ofApp::CAMERA_HEIGHT_LABEL, OFX_UI_FONT_SMALL);
+    ofxUILabel* cameraHeightLabel = new ofxUILabel(180, ofApp::CAMERA_HEIGHT_LABEL, OFX_UI_FONT_SMALL);
     this->cameraPanel->addWidgetDown( cameraHeightLabel );
     this->cameraHeightTextInput = new ofxUITextInput("CameraHeight", "1080", 80, 18);
     this->cameraHeightTextInput->setOnlyNumericInput(true);

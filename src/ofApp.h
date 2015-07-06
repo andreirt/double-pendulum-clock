@@ -12,27 +12,27 @@ private:
     ofxUICanvas *imagePanel;
 
     ofVideoGrabber* videoGrabber;
-    int selectedCameraIndex = 0;
+    int selectedCameraIndex;
 
     ofImage screenImage;
 
-    int step = 0;
+    int step;
     int y;
     int x1, x2;
     int speed;
     int height;
 
-    int maxSpeed = 2;
-    int maxHeight = 24;
+    int maxSpeed;
+    int maxHeight;
 
-    int cameraWidth = 1280;
-    int cameraHeight = 720;
+    int cameraWidth;
+    int cameraHeight;
 
     int imageWidth;
     int imageHeight;
 
-    float lastTimeImageWasSaved = 0;
-    int intervalToSaveImage = 15;
+    float lastTimeImageWasSaved;
+    int intervalToSaveImage;
 
     const static string CAMERA_WIDTH_LABEL;
     const static string CAMERA_HEIGHT_LABEL;
