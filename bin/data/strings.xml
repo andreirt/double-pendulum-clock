@@ -8,14 +8,14 @@
 		<en>Camera height</en>
 		<pt>Altura da câmera</pt>
 	</cameraHeight>
-	<maxspeed>
+	<maxSpeed>
 		<en>Max speed</en>
 		<pt>Velocidade máxima</pt>
-	</maxspeed>
-    <maxheight>
+	</maxSpeed>
+    <maxHeight>
         <en>Max height</en>
         <pt>Altura máxima</pt>
-    </maxheight>
+    </maxHeight>
 	<saveImage>
 		<en>Save image each</en>
 		<pt>Salvar imagem a cada</pt>
